@@ -11,8 +11,8 @@ def sacar(valor):
 sacar(100)
 #jeito errado pois depois dos dois pontos ele espera que haja uma identação para queo codigo funcione da maneira esperada
 def depositar(valor):
-saldo = 500
-saldo+= valor
+ saldo = 500
+ saldo+= valor
 
 
 sacar(1000)
