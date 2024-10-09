@@ -1,15 +1,14 @@
 from datetime import datetime
 import textwrap
 
-def menu(): 
-    menu =  """\n
-    ~~~~~~~~~~BEM VINDO: ~~~~~~~~~~~
-    [1]\t depositar
-    [2]\t sacar
-    [3]\t transação
-    [4]\t extrato
-    [0]\t sair
-    """
+def menu():
+    menu = """\n
+    ================ MENU ================
+    [1]\tDepositar
+    [2]\tSacar
+    [3]\ttransação
+    [4]\ttExtrato
+    => """
     return input(textwrap.dedent(menu))
 
 def depositar(saldo, extrato, deposito): 
@@ -43,7 +42,6 @@ def sacar(limite, LIMITE_DE_SAQUES, saldo, numero_de_saques, extrato,saque):
 
     else:
         print("Não foi possivel completar a operação, o valor informado é invalido!")
-
     return saldo, extrato
  
 def transacao(LIMITE_DE_TRANSAÇOES, qntd_transações, saldo):
@@ -108,4 +106,3 @@ def main():
                 ) 
         elif opcao == 4:
             extrato(qntd_transações,saldo,data_hora=datetime)
-            
